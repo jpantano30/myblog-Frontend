@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react"
 import { useNavigate, useParams } from "react-router-dom"
+import './Form.scss'
 const Form = (props) => {
   const navigate = useNavigate()
   const params = useParams()
@@ -26,31 +27,30 @@ const Form = (props) => {
     }))
   }
 
-  const handlesubmission = (event) => {
+  const handleSubmission = (event) => {
     event.preventDefault()
     props.handleSubmit(formData, props.formType)
     navigate('/')
   }
 
   return (
-    <form onSubmit={handlesubmission}>
-      <h3>title</h3>
+    <form className="form" onSubmit={handleSubmission}>
+      <h3>Title</h3>
       <input 
         type='text'
         onChange={handleChange}
         value={formData.title}
         name='title'
       />
-      <h3>body</h3>
-      <input 
-        type='text'
+      <h3>Body</h3>
+      <textarea
+        className="body"
         onChange={handleChange}
         value={formData.body}
         name='body'
       />
       <input 
         type='submit' vlaue={props.buttonLabel} />
-        
     </form>
   )
 }

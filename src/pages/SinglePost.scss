@@ -1,0 +1,92 @@
+
+$light-pink: rgb(255, 202, 222);
+$bright-pink: rgb(255, 90, 172);
+$orangy-pink-darker: rgb(244, 64, 81);
+$medium-pink-peach: rgb(251, 106, 124);
+$light-pink-peach: rgb(246, 132, 122); 
+
+$yellow: rgb(248, 214, 100);
+
+$light-teal: rgb(161, 220, 200);
+$medium-teal: rgb(11, 155, 138);
+$dark-teal: rgb(20, 67, 81);
+
+
+.single-post {
+  margin: 20px auto;
+  padding: 20px;
+  border: 5px solid $orangy-pink-darker;
+  border-radius: 5px;
+  background-color: rgb(217, 241, 233);
+  animation: slideIn 0.5s ease-in-out;
+  max-width: 600px;
+  text-align: center;
+
+  @keyframes slideIn {
+    from {
+      transform: translateX(-100%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: $orangy-pink-darker;
+  }
+
+  h2 {
+    font-size: 25px;
+    color: $medium-teal;
+    margin-bottom: 20px;
+  }
+
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .edit-button {
+      background-color: $yellow;
+      color: $medium-teal;
+      font-weight: 800;
+      font-size: 16px;
+
+      &:hover {
+        background-color: $dark-teal;
+        color: $light-pink;
+      }
+    }
+
+    .delete-form {
+      display: inline-block;
+      
+      .delete-button {
+        background-color: $yellow;
+        color: $medium-teal;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-weight: 800;
+        font-size: 16px;
+
+        &:hover {
+          background-color: $dark-teal;
+          color: $light-pink;
+        }
+      }
+    }
+  }
+}

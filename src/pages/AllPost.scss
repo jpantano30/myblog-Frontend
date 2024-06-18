@@ -1,0 +1,35 @@
+$light-pink: rgb(255, 202, 222);
+$bright-pink: rgb(255, 90, 172);
+$orangy-pink-darker: rgb(244, 64, 81);
+$medium-pink-peach: rgb(251, 106, 124);
+$light-pink-peach: rgb(246, 132, 122); 
+
+$yellow: rgb(248, 214, 100);
+
+$light-teal: rgb(161, 220, 200);
+$medium-teal: rgb(11, 155, 138);
+$dark-teal: rgb(20, 67, 81);
+
+$brown: rgb(83, 25, 21);
+
+.all-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .allpostsh1 {
+    color: $orangy-pink-darker;
+    text-decoration: underline;
+  }
+  h2 {
+    color: $medium-teal;
+    padding: 0 20px;
+  }
+  .post {
+    width: 50%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+

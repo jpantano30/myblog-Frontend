@@ -1,0 +1,48 @@
+$light-pink: rgb(255, 202, 222);
+$bright-pink: rgb(255, 90, 172);
+$orangy-pink-darker: rgb(244, 64, 81);
+$medium-pink-peach: rgb(251, 106, 124);
+$light-pink-peach: rgb(246, 132, 122); 
+
+$yellow: rgb(248, 214, 100);
+
+$light-teal: rgb(161, 220, 200);
+$medium-teal: rgb(11, 155, 138);
+$dark-teal: rgb(20, 67, 81);
+
+
+.post {
+  margin: 20px;
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fdfdfe;
+  transition: transform 0.3s;
+  text-align: center;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+    color: $orangy-pink-darker;
+
+    &:hover {
+      color: $bright-pink;
+      text-decoration: underline;
+    }
+  }
+
+  form {
+    margin-top: 10px;
+  }
+}

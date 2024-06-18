@@ -1,24 +1,12 @@
-import { Link, useNavigate } from "react-router-dom"
+import { Link } from "react-router-dom"
+import './Post.scss'
 
-const Post = ({ post, deletePost }) => {
-
-  const navigate = useNavigate()
-
-  const handleDelete = (event) => {
-    event.preventDefault()
-    deletePost(post.id)
-    navigate('/')
-  }
-
+const Post = ({ post }) => {
   return (
-    <div>
+    <div className="post">
       <Link to={`/post/${post.id}`}>
         <h1>{post.title} </h1>
       </Link>
-      <h2>{post.body}</h2>
-      <form onSubmit={handleDelete}>
-        <input type="submit" value='Delete Post' />
-      </form>
     </div>
   )
 }

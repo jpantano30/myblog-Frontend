@@ -1,0 +1,93 @@
+$light-pink: rgb(255, 202, 222);
+$bright-pink: rgb(255, 90, 172);
+$orangy-pink-darker: rgb(244, 64, 81);
+$medium-pink-peach: rgb(251, 106, 124);
+$light-pink-peach: rgb(246, 132, 122); 
+
+$yellow: rgb(248, 214, 100);
+
+$light-teal: rgb(161, 220, 200);
+$medium-teal: rgb(11, 155, 138);
+$dark-teal: rgb(20, 67, 81);
+
+$brown: rgb(83, 25, 21);
+
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: $yellow;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+
+
+
+  @keyframes tilt {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+  }
+
+
+  .navbar-logo {
+    font-size: 24px;
+    &:hover {
+      animation: tilt 0.5s ease-in-out 2;
+    }
+    
+    a {
+      color: $orangy-pink-darker;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    svg {
+      padding-left: 5px;
+    }
+  }
+
+
+
+  .navbar-links {
+    a {
+      color: rgb(32, 103, 125);
+      text-decoration: none;
+      margin-left: 20px;
+      padding: 5px 10px;
+      transition: background-color 0.3s;
+      border-radius: 5px;
+
+      &:hover {
+        background-color: $light-teal;
+      }
+    }
+  }
+
+  .navbar-search {
+    input {
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 1px solid $bright-pink;
+      outline: none;
+      color: $dark-teal;
+    }
+  }
+}
+
