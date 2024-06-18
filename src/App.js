@@ -7,8 +7,8 @@ import Form from './pages/Form'
 import NavBar from './components/Navbar'
 
 
-// const apiURL = process.env.REACT_APP_API_URL || 'http://localhost:8000'
-const apiURL = 'http://localhost:8000'
+const apiURL = process.env.REACT_APP_API_URL || 'http://localhost:8000'
+
 
 function App() {
   const [posts, setPosts] = useState([])
