@@ -6,7 +6,7 @@ import SinglePost from './pages/SinglePost'
 import Form from './pages/Form'
 
 
-const apiURL = process.env.API_URL
+const apiURL = process.env.REACT_APP_API_URL || 'http://localhost:8000'
 
 function App() {
   const [posts, setPosts] = useState([])
