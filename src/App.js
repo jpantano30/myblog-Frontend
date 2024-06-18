@@ -6,7 +6,7 @@ import SinglePost from './pages/SinglePost'
 import Form from './pages/Form'
 
 
-const apiURL = 'https://myblog10-6540b8cc074a.herokuapp.com'
+const apiURL = process.env.API_URL
 
 function App() {
   const [posts, setPosts] = useState([])
